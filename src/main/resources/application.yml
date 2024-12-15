@@ -1,0 +1,17 @@
+#spring.application.name=micro-lms-api-gateway-sb
+spring:
+  application:
+    name: micro-lms-api-gateway-sb
+  cloud:
+    gateway:
+      routes:
+        - id: user_service
+          uri: http://localhost:5000
+          predicates:
+            - Path=/users/**
+        - id: media_service
+          uri: http://localhost:5001
+          predicates:
+            - Path=/media/**
+server:
+  port: 8081
