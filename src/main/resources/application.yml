@@ -5,11 +5,11 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: user_service
-          uri: http://localhost:5000
-          predicates:
-            - Path=/users/**
-        - id: media_service
+#        - id: user_route
+#          uri: http://localhost:5000
+#          predicates:
+#            - Path=/users/**
+        - id: media_route
           uri: http://localhost:5001
           predicates:
             - Path=/media/**

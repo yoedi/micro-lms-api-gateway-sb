@@ -1,4 +1,4 @@
-package com.lms.gateway.micro_lms_api_gateway_sb;
+package com.lms.gateway.apigateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
